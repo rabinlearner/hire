@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+		.topbar{
+			height: 100vh;
+			background: red;
+		}
+		.topbar img{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			height: 50%;
+			width: 40%;
+		}
+	</style>
+</head>
+<body>
+
+
+<div class="topbar">
+	<img src="4.jpg" alt="">
+	<div class="col-md-6 offset-md-6">
+		<h1>the things we should all know abut the life.Be simple be humble.live the as simple as possible money doesnt bring happiness </h1>
+	</div>
+</div>
+
+
+<script src="jquery.min.js"></script>
+
+<script>
+
+$(".topbar").on("mousemove",function(e){
+		const left=e.pageX;
+		const right=e.pageY;
+		$(".topbar img").css({"left":left/9,"top":right/9});
+})
+	
+</script>
+</body>
+</html>
